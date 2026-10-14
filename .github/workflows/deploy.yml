@@ -32,6 +32,9 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Limpar dependencias antigas
+        run: rm -rf node_modules
+
       - name: Instalar dependencias
         run: npm install
 
